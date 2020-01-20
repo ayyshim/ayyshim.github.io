@@ -1,0 +1,38 @@
+---
+title: "About me"
+layout: "page"
+permalink: /about
+---
+
+<h2>About me :</h2>
+<p>
+  Hi my name is Ashim. I am a programmer.I started off as a web developer but
+  then soon I started learning mobile application development as well.
+</p>
+<h4>Skills</h4>
+<div class="skills">
+  <ul>
+    {% for skill in site.skills %}
+      <li><img src="{{"/assets/images/skills/" | relative_url}}{{skill.image}}" alt="{{skill.name}}"></li>
+    {% endfor %}
+  </ul>
+</div>
+<h4>Academics</h4>
+<div class="academics">
+  <ul>
+    {% for academic in site.academics %}
+    <li>
+      <div class="item">
+        <div class="level">
+          {{academic.level}}
+        </div>
+        {% for institute in academic.institutes %}
+        <div class="institute">
+          {{institute}}
+        </div>
+        {% endfor %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

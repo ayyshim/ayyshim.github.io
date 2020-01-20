@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{page.title}}</title>
+    <meta property="og:url" content="{{site.url}}" />
+    <meta property="og:title" content="{{page.title}}" />
+    <meta
+      property="og:description"
+      content="{{site.description}}"
+    />
+    <meta
+      property="og:image"
+      content="{% if page.feature_image %}{{page.feature_image}}{%else%}{{site.url}}/assets/images/avatar2.jpg{%endif%}"
+    />
+    <script
+      src="https://kit.fontawesome.com/2969aedcda.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{"/assets/css/style.css" | relative_url}}" />
+    <link rel="stylesheet" href="{{"/assets/css/responsive.css" | relative_url}}" />
+    <link rel="stylesheet" href="{{"/assets/css/home.css" | relative_url}}" />
+    <link rel="stylesheet" href="{{"/assets/css/pages.css" | relative_url}}" />
+  </head>
+  <body>
+    {%include navbar.html%}
+
+    {{content}}
+
+    {%include footer.html%}
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.pages {
+  width: 100%;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
+}
+
+.pages > ul {
+  margin-top: 16px;
+  padding-left: 8px;
+}
+
+.pages > ul > li {
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.pages > ul > li::before {
+  content: "~ ";
+  font-weight: bold;
+}
+.pages > ul > li:first-child {
+  margin-top: 0px;
+}
