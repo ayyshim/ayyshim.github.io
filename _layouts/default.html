@@ -13,7 +13,7 @@
     />
     <meta
       property="og:image"
-      content="{% if page.feature_image %}{{page.feature_image}}{%else%}{{site.url}}/assets/images/avatar2.jpg{%endif%}"
+      content="{% if page.feature_image %}{{"/assets/images/posts/" | relative_url}}{{page.feature_image}}{%else%}{{site.url}}{{"/assets/images/avatar2.jpg" | relative_url}}{%endif%}"
     />
     <script
       src="https://kit.fontawesome.com/2969aedcda.js"

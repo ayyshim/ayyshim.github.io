@@ -8,7 +8,7 @@ layout: page
     <p class="timestamp">{{ page.date | date: '%A, %B %d, %Y' }}    </p>
     {% if page.feature_image %}
     <img
-      src="{{site.url}}/assets/images/{{page.feature_image}}"
+      src="{{"/assets/images/posts/" | relative_url}}{{page.feature_image}}"
       class="hide_on_desktop mobile_feature_image"
     />
     {% endif %}
@@ -20,7 +20,7 @@ layout: page
   {% if page.feature_image %}
   <div class="hide_on_mobile feature_image">
     <img
-      src="{{site.url}}/assets/images/{{page.feature_image}}"
+      src="{{"/assets/images/posts/" | relative_url}}{{page.feature_image}}"
       class="desktop_feature_image"
     />
   </div>
