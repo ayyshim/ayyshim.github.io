@@ -35,13 +35,22 @@
     <meta name="msapplication-TileImage"
     content="{{"/assets/favicons/ms-icon-144x144.png" | relative_url}}">
     <title>{{page.title}}</title>
-    <meta property="og:url" content="{{site.url}}" />
+    <meta property="og:url" content="{{site.url}}{{page.url}}" />
     <meta property="og:title" content="{{page.title}}" />
-    <meta property="og:description" content="{{site.description}}" />
     <meta property="og:image" content="{% if page.feature_image
     %}{{"/assets/images/posts/" |
     relative_url}}{{page.feature_image}}{%else%}{{site.url}}{{"/assets/images/avatar2.jpg"
     | relative_url}}{%endif%}" />
+    {% if page.isPost == true %}
+    <meta property="og:type" content="article"/>
+    <meta property="og:article:published_time" content="{{ page.date | date: '%A, %B %d, %Y' }}"/>
+    <meta property="og:article:author" content="Ashim"/>
+    <meta property="og:description" content="{{page.mini_description}}" />
+    {%else%}
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="{{site.description}}" />
+
+    {%endif%}
     <script
       src="https://kit.fontawesome.com/2969aedcda.js"
       crossorigin="anonymous"

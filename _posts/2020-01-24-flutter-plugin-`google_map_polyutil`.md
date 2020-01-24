@@ -1,5 +1,6 @@
 ---
 feature_image: "google_map_polyutil.jpg"
+mini_description: "Dart bridge between native google map utility class PolyUtil and your application."
 ---
 Dart bridge between native google map utility class PolyUtil and your application.
 

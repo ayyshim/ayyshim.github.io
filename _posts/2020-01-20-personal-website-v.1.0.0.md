@@ -1,5 +1,6 @@
 ---
 feature_image: "personal_website_v.1.0.0.png"
+mini_description: "I thought I was growing so I made myself a website from scratch using html, css, and Jekyll static site generator and hosted it on GitHub pages."
 ---
 
 I thought I was growing so I made myself a website from scratch using html, css, and [Jekyll](https://jekyllrb.com/) static site generator and hosted it on [GitHub pages](https://pages.github.com/). 
