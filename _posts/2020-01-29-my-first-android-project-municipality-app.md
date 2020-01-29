@@ -1,6 +1,6 @@
 ---
 title: "My first android project - Municipality app"
-feature_image: "klprm.webp"
+feature_image: "kplrm.png"
 mini_description: "During the vacation time after +2, I worked in a Kathmandu based IT company BSAI Techno Sales Pvt. Ltd. for few months. There, as my first project,..."
 ---
 
