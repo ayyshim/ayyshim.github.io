@@ -168,3 +168,13 @@ footer > * > .footer > .social_links > a:hover {
   font-size: 14px;
   color: #8a8a8a;
 }
+
+.body > ul {
+  padding: 0;
+}
+.body > ul > li::before {
+  content: "# ";
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
