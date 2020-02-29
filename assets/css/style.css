@@ -126,6 +126,8 @@ footer > * > .footer > .social_links > a:hover {
 
 .detail_content > .body > p {
   margin: 8px 0px;
+  text-align: justify;
+  letter-spacing: 0.6px;
 }
 
 .detail_content > .body > p > a {
