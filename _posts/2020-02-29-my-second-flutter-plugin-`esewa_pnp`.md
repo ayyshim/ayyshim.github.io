@@ -1,7 +1,7 @@
 ---
 title: "My second flutter plugin `esewa_pnp`"
 feature_image: "esewa_pnp.jpg"
-mini_description: 'I was working on a project and I had to implement "payment via eSewa" method anyhow. There was no any official plugin available to use and I couldn''t wait for official developers of eSewa to make it, so I made and published...'
+mini_description: "I was working on a project and I had to implement payment via eSewa method anyhow. There was no any official plugin available to use and I couldn't wait for official developers of eSewa to make it, so I made and published..."
 ---
 
 Again, I have published yet another plugin for my fellow developer mates to make their lives easier along with mine.
