@@ -13,7 +13,10 @@ permalink: /about
 <div class="skills">
   <ul>
     {% for skill in site.skills %}
-      <li><img src="{{"/assets/images/skills/" | relative_url}}{{skill.image}}" alt="{{skill.name}}"></li>
+    <li>
+      <img src="{{"/assets/images/skills/" | relative_url}}{{skill.image}}"
+      alt="{{skill.name}}">
+    </li>
     {% endfor %}
   </ul>
 </div>
@@ -23,14 +26,27 @@ permalink: /about
     {% for academic in site.academics %}
     <li>
       <div class="item">
-        <div class="level">
-          {{academic.level}}
-        </div>
+        <div class="level">{{academic.level}}</div>
         {% for institute in academic.institutes %}
-        <div class="institute">
-          {{institute}}
-        </div>
+        <div class="institute">{{institute}}</div>
         {% endfor %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<h4>Work Experiences</h4>
+<div class="professional-experience">
+  <ul>
+    {% for experience in site.work-experience %}
+    <li>
+      <div class="item">
+        <div class="level">{{experience.level}}</div>
+        {% if experience.company %}
+        <div class="company">
+          <a href="{{experience.companyLink}}">{{experience.company}}</a>
+        </div>
+        {% endif %}
       </div>
     </li>
     {% endfor %}

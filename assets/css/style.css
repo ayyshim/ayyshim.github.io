@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
 * {
   margin: 0;
   box-sizing: border-box;
   outline: none;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: 0.5s ease all;
 }
 
@@ -166,6 +168,35 @@ footer > * > .footer > .social_links > a:hover {
 }
 
 .academics > ul > li > div > .institute {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.professional-experience > ul {
+  padding: 0;
+}
+
+.professional-experience > ul > li:first-child {
+  margin-top: 0px;
+}
+.professional-experience > ul > li {
+  display: flex;
+  margin-top: 14px;
+}
+
+.professional-experience > ul > li::before {
+  content: "# ";
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.professional-experience > ul > li > div > .level {
+  font-size: 18px;
+}
+
+.professional-experience > ul > li > div > .company {
   margin-top: 4px;
   font-size: 14px;
   color: #8a8a8a;

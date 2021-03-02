@@ -10,42 +10,38 @@ facebook_username: ayyshim
 instagram_username: ayyshim
 
 skills:
-  -
-    name: "Javascript"
+  - name: "Javascript"
     image: "js.png"
-  -
-    name: "ReactJS"
+  - name: "ReactJS"
     image: "react_js.png"
-  -
-    name: "Dart"
+  - name: "Dart"
     image: "dart.png"
-  -
-    name: "flutter"
+  - name: "flutter"
     image: "flutter.png"
-  -
-    name: "python"
+  - name: "python"
     image: "python.png"
-  -
-    name: "android"
+  - name: "android"
     image: "android.png"
 
 academics:
-  -
-    level: "Bachelor of Computer Applications (2018 - Present)"
+  - level: "Bachelor of Computer Applications (2018 - Present)"
     institutes:
-      - 
-        "Tula's Institute, Dhoolkot, Dehradun, India"
-  -
-    level: "+2 Management"
+      - "Tula's Institute, Dhoolkot, Dehradun, India"
+  - level: "+2 Management"
     institutes:
-      - 
-        "Pentagon Int'l college, Tinkune, Kathmandu, Nepal"
-      - 
-        "Tilottama Campus, Yogikuti, Rupandehi, Nepal"
+      - "Pentagon Int'l college, Tinkune, Kathmandu, Nepal"
+      - "Tilottama Campus, Yogikuti, Rupandehi, Nepal"
+work-experience:
+  - level: "Lead Developer / Application Manager (2021 - Present)"
+    company: "G.G. Maidan (Pvt.) Ltd., Kathmandu"
+    companyLink: "https://ggmaidan.com"
+  - level: "Freelancing (2018 - Present)"
+  - level: "Android Developer (2021 - Present)"
+    company: "BSAI Techno Sales, Kathmandu"
+    companyLink: "https://bsaitechnosales.com"
 
 defaults:
-  - 
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
